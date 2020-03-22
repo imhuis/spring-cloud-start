@@ -1,0 +1,19 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: turbine-admin
+turbine:
+  app-config: node1
+  aggregator:
+    cluster-config: default
+  cluster-name-expression: new String("default")
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream

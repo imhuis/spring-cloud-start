@@ -1,0 +1,12 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: spring-boot-eureka-admin
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 10
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8000}/eureka/
