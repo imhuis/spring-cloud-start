@@ -25,6 +25,7 @@
         <!-- node1 -->
         <module>spring-boot-consumer-hystrix-dashboard</module>
         <module>spring-cloud-turbine</module>
+        <module>spring-cloud-config-server</module>
     </modules>
 
     <properties>

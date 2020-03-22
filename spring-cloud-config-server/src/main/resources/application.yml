@@ -1,0 +1,29 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: spring-cloud-config-server
+  # 默认从应用的src/main/resource目录下检索配置文件
+#  profiles:
+#    active: native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/imhuis/spring-cloud-start.git
+          search-paths: config-repo
+          username:
+          password:
+        # 指定配置文件路径
+#        native:
+#          search-locations:
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+
+#/{application}/{profile}[/{label}]
+#/{application}-{profile}.yml
+#/{label}/{application}-{profile}.yml
+#/{application}-{profile}.properties
+#/{label}/{application}-{profile}.properties
