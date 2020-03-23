@@ -21,12 +21,14 @@
         <module>spring-boot-eureka-server</module>
         <module>spring-boot-eureka-admin</module>
         <module>spring-boot-eureka-producer</module>
+        <module>spring-boot-eureka-producer2</module>
         <module>spring-boot-eureka-consumer</module>
         <!-- node1 -->
         <module>spring-boot-consumer-hystrix-dashboard</module>
         <module>spring-cloud-turbine</module>
         <module>spring-cloud-config-server</module>
         <module>spring-cloud-config-client</module>
+        <module>spring-cloud-zuul</module>
     </modules>
 
     <properties>

@@ -1,0 +1,17 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: zuul
+zuul:
+  routes:
+    api-a:
+      path: /hello/**
+      serviceId: eureka-producer
+#    imhui:
+#      path: /keybase.txt
+#      url: http://imhui.org/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

@@ -3,6 +3,15 @@ server:
 spring:
   application:
     name: spring-cloud-config-client
+  cloud:
+    bus:
+      trace:
+        enabled: true
+  rabbitmq:
+    host:
+    port:
+    username:
+    password:
 eureka:
   client:
     service-url:

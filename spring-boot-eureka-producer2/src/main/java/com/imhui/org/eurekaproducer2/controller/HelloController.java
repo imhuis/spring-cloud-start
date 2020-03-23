@@ -1,4 +1,4 @@
-package com.imhui.cloud.eurekaproducer.controller;
+package com.imhui.org.eurekaproducer2.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +18,6 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public String hello(@RequestParam String name){
-        return "Hello "+ name +",this is a server producer and port={"+ port +"}";
+        return "Hello "+ name +",this is a another server producer and port={"+ port +"}";
     }
 }
